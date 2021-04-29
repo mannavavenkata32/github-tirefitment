@@ -1,0 +1,5 @@
+<div class="content">
+  <div class="items">
+    <div class="item" (click)="selected.emit(item)" *ngFor="let item of list$ | async; index as i">{{ item }}</div>
+  </div>
+</div>

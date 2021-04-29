@@ -1,0 +1,15 @@
+.content {
+  .items {
+    display: flex;
+    flex-wrap: wrap;
+    .item {
+      flex: 0 1 20%;
+      font-size: 16px;
+      padding: 10px;
+      color: #007eb4;
+      cursor: pointer;
+      text-align: center;
+      box-sizing: border-box;
+    }
+  }
+}

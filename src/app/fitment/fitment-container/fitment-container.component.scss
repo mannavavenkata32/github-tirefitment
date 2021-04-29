@@ -1,0 +1,57 @@
+:host {
+  padding: 20px;
+  box-sizing: border-box;
+  display: block;
+  button {
+    background-color: #007eb4;
+    border-color: #007eb4;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    border: none;
+  }
+
+  .container {
+    margin-top: 20px;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px;
+    .title {
+      color: #0795d0;
+      margin-bottom: 20px;
+    }
+    .sub-title {
+      text-align: center;
+      font-size: 20px;
+    }
+    .states {
+      display: flex;
+      justify-content: center;
+      margin: 20px 5rem;
+      .state {
+        flex: 1;
+        padding: 5px;
+        text-align: center;
+        color: gray;
+        border-bottom: 2px solid gray;
+        &.active {
+          color: white;
+          border-color: white;
+        }
+        &.filled {
+          color: #007eb4;
+          border-color: #007eb4;
+        }
+      }
+    }
+    .selection {
+      text-align: center;
+    }
+  }
+}

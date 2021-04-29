@@ -1,0 +1,111 @@
+{
+  "messageHeader": {
+    "transactionType": "GetAll",
+    "transactionIdentifier": "78781817817",
+    "source": "",
+    "message": "Success",
+    "transactionTimestamp": "2021.04.21 20.40.49",
+    "target": "",
+    "status": "OK"
+  },
+  "messagePayload": [
+    {
+      "lcpIntId": 4,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "yes",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record12"
+    },
+    {
+      "lcpIntId": 7,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "no",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record14"
+    },
+    {
+      "lcpIntId": 1,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "yes",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record10"
+    },
+    {
+      "lcpIntId": 2,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "no",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record1"
+    },
+    {
+      "lcpIntId": 3,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "no",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record12"
+    },
+    {
+      "lcpIntId": 6,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "no",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record13"
+    },
+    {
+      "lcpIntId": 5,
+      "submitted_by": "mani",
+      "submitted_group": "ofm",
+      "submitted_onbehalf_of": "mani",
+      "impacted_business_group": "lifesciences",
+      "confidential_flag": "false",
+      "apprved_funding_avain_flag": "false",
+      "roadmap_related": "no",
+      "gmp_related": "yes",
+      "start_date": "2020-09-24",
+      "title": "test",
+      "description": "test record12"
+    }
+  ]
+}
