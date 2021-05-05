@@ -1,15 +1,15 @@
-<button (click)="getYears()">Find tyres for my vehicle</button>
+<button (click)="getYears()">Find tires for my vehicle</button>
 
-<div class="container" *ngIf="showTyreDetails">
+<div class="container" *ngIf="showtireDetails">
   <div class="title">START OVER</div>
   <div class="sub-title">{{ subTitle }}</div>
   <div class="states">
-    <div class="state" [ngClass]="{ active: selectionState === state.YEAR, filled: tyreDetails.year }">year</div>
-    <div class="state" [ngClass]="{ active: selectionState === state.MAKE, filled: tyreDetails.make }">make</div>
-    <div class="state" [ngClass]="{ active: selectionState === state.MODEL, filled: tyreDetails.model }">model</div>
-    <div class="state" [ngClass]="{ active: selectionState === state.STYLE, filled: tyreDetails.style }">style</div>
+    <div class="state" [ngClass]="{ active: selectionState === state.YEAR, filled: tireDetails.year }">year</div>
+    <div class="state" [ngClass]="{ active: selectionState === state.MAKE, filled: tireDetails.make }">make</div>
+    <div class="state" [ngClass]="{ active: selectionState === state.MODEL, filled: tireDetails.model }">model</div>
+    <div class="state" [ngClass]="{ active: selectionState === state.STYLE, filled: tireDetails.style }">style</div>
   </div>
-  <div class="selection" *ngIf="tyreDetails.year">Vehicle: {{ tyreDetails.year }} {{ tyreDetails.make }} {{ tyreDetails.model }}</div>
+  <div class="selection" *ngIf="tireDetails.year">Vehicle: {{ tireDetails.year }} {{ tireDetails.make }} {{ tireDetails.model }}</div>
   <ng-container [ngSwitch]="selectionState">
     <ng-container *ngSwitchCase="state.YEAR">
       <app-list (selected)="getSelectedValue($event)" [list$]="years$"></app-list>

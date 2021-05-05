@@ -23,13 +23,13 @@ export class FitmentContainerComponent implements OnInit {
   style$: Observable<string[]>;
   selectionState: State = State.YEAR;
   state = State;
-  tyreDetails = {
+  tireDetails = {
     year: null,
     make: null,
     model: null,
     style: null,
   };
-  showTyreDetails = false;
+  showtireDetails = false;
   constructor(private store: Store<AppState>) {}
 
   ngOnInit() {
@@ -41,8 +41,8 @@ export class FitmentContainerComponent implements OnInit {
   }
 
   getYears() {
-    this.showTyreDetails = true;
-    this.tyreDetails = {
+    this.showtireDetails = true;
+    this.tireDetails = {
       year: null,
       make: null,
       model: null,
@@ -55,27 +55,27 @@ export class FitmentContainerComponent implements OnInit {
     switch (this.selectionState) {
       case State.YEAR:
         this.subTitle = 'Select a Make';
-        this.tyreDetails.year = value;
+        this.tireDetails.year = value;
         this.selectionState = State.MAKE;
-        this.store.dispatch(new VehicleActions.FetchMake(`year=${this.tyreDetails.year}`));
+        this.store.dispatch(new VehicleActions.FetchMake(`year=${this.tireDetails.year}`));
         break;
       case State.MAKE:
         this.subTitle = 'Select a Model';
         this.selectionState = State.MODEL;
-        this.tyreDetails.make = value;
-        this.store.dispatch(new VehicleActions.FetchModels(`year=${this.tyreDetails.year}&make=${this.tyreDetails.make}`));
+        this.tireDetails.make = value;
+        this.store.dispatch(new VehicleActions.FetchModels(`year=${this.tireDetails.year}&make=${this.tireDetails.make}`));
         break;
       case State.MODEL:
         this.subTitle = 'Select a Style';
         this.selectionState = State.STYLE;
-        this.tyreDetails.model = value;
+        this.tireDetails.model = value;
         this.store.dispatch(
-          new VehicleActions.FetchStyle(`year=${this.tyreDetails.year}&make=${this.tyreDetails.make}&model=${this.tyreDetails.model}`)
+          new VehicleActions.FetchStyle(`year=${this.tireDetails.year}&make=${this.tireDetails.make}&model=${this.tireDetails.model}`)
         );
         break;
       case State.STYLE:
-        this.tyreDetails.style = value;
-        this.showTyreDetails = false;
+        this.tireDetails.style = value;
+        this.showtireDetails = false;
         break;
     }
   }
